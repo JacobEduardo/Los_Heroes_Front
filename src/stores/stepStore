@@ -1,0 +1,21 @@
+// stores/dataStore.js
+import { defineStore } from 'pinia';
+
+export const useDataStore = defineStore('dataStore', {
+  state: () => ({
+    dataStepTwo: null,
+    dataStepThree: null,  // Propiedad existente
+    dataStepFour: null    // Nueva propiedad añadida
+  }),
+  actions: {
+    setDataStepTwo(newData) {
+      this.dataStepTwo = newData;
+    },
+    setDataStepThree(newData) {
+      this.dataStepThree = newData;
+    },
+    setDataStepFour(newData) {   // Nueva acción para actualizar dataStepFour
+      this.dataStepFour = newData;
+    }
+  }
+});

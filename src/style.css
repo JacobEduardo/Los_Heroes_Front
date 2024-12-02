@@ -1,0 +1,133 @@
+.form-label {
+    margin-bottom: .0rem; 
+}
+.btn-success {
+    --bs-btn-bg: #6fb74e;
+    --bs-btn-border-color: #449aa400;
+}
+#tu_compra{
+    background-color: #e9f8c9;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow-x: hidden;
+    background-color: radial-gradient(circle, rgba(104,143,193,1) 0%, rgba(97,159,192,1) 47%, rgba(104,143,193,1) 95%, rgba(104,143,193,1) 100%);
+}
+
+body::before {
+    content: ""; /* Necesario para crear el pseudo-elemento */
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Alinea al principio del contenedor */
+    left: 0; /* Alinea al lado izquierdo */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa todo el alto */
+    /*background-image: url('fondo_1.jpeg'); /* Imagen de fondo */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+}
+
+.td_text{
+    font-family: monospace;
+    align-content: end;
+}
+.td_title{
+    font-family: monospace;
+    text-align: end;
+    align-content: end;
+}
+.td_num{
+    text-align: end;
+    align-content: end;
+    font-family: monospace;
+}
+.td_important{
+    text-align: end;
+    align-content: end;
+    font-family: monospace;
+}
+
+.table-custom {
+    --bs-table-bg: transparent; /* Quita el fondo blanco */
+    --bs-table-accent-bg: transparent; /* Opcional: quita los fondos alternos */
+    --bs-table-hover-bg: transparent; /* Opcional: quita el fondo al pasar el mouse */
+}
+
+.w-100 {
+    width: 100% !important;
+    height:  550px;
+}
+#carouselControls{
+    border-color: #198754;
+    border-width: 5px;
+    border-style: inset;
+    border-radius: var(--bs-border-radius) !important;
+
+}
+
+.fondo_main {
+    width: 100%;
+    height: 100%;
+    /* background: 
+        url('/Grupo-93.png') no-repeat center bottom, /* Imagen encima */
+        /* url('fondo.jpeg') no-repeat center / cover; /* Imagen de fondo */
+    background-size:  100% auto, cover; /* Ajusta cada capa de fondo */
+    background: radial-gradient(circle, rgba(104,143,193,1) 0%, rgba(97,159,192,1) 47%, rgba(104,143,193,1) 95%, rgba(104,143,193,1) 100%);
+}
+
+.futter_{
+    background-color:#bcc5c5; min-height: 10vh;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+.nav_interior{
+    max-width: 900px;
+    min-width: 900px; 
+}
+
+@media (min-width: 768px) {
+    .navbar .container-fluid {
+        justify-content: space-around;
+    }
+}
+
+.container-master{
+    margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+    .rounded-md {
+        border-radius: 0.5rem; /* Ajusta el valor según sea necesario */
+    }
+}
+
+#formulario{
+    background-color: #ffffffeb;;
+}
+
+
+.fondo-imagen {
+    width: 300px; /* Ancho del div */
+    height: 200px; /* Alto del div */
+    background-image: url('image_1.png');
+    background-size: contain; /* Ajusta la imagen manteniendo sus proporciones */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+    
+}
+
+#barra_pasos {
+    color: ghostwhite;
+}
+
+
+
+
