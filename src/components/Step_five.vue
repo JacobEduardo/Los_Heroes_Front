@@ -103,7 +103,7 @@ const enviarCorreo = async () => {
   console.log(uuid.value);
 
   try {
-    const response = await fetch('http://localhost:3000/caja/enviarCorreo', {
+    const response = await fetch('https://server-backend-bl8a.onrender.com/caja/enviarCorreo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -124,7 +124,7 @@ const enviarCorreo = async () => {
 
 const descargarBoleta = async () => {
   try {
-    const response = await fetch('http://localhost:3000/caja/descargarBoleta', {
+    const response = await fetch('https://server-backend-bl8a.onrender.com/caja/descargarBoleta', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

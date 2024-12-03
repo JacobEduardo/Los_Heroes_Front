@@ -161,7 +161,7 @@ const enviarOrden = async () => {
 
 
 const handleFechaChange = () => {
-    axios.get('http://localhost:3000/cantidad_entradas_desc_por_dia', {//PENDIENTE. esta bien?
+    axios.get('https://server-backend-bl8a.onrender.com/cantidad_entradas_desc_por_dia', {//PENDIENTE. esta bien?
         params: {
             fecha: fecha_entradas.value,
             transaccion: user_transaccion,
@@ -209,7 +209,7 @@ function comprobarEntradas(entradas_adulto, entradas_nino) {
 
 async function comprobarCapacidad(entradas_adulto, entradas_nino, capacidad) {
     try {
-        const response = await axios.get('http://localhost:3000/cantidad_entradas_vendidas', {
+        const response = await axios.get('https://server-backend-bl8a.onrender.com/cantidad_entradas_vendidas', {
             params: {
                 fecha: fecha_entradas.value,
                 parque_seleccionado: data.value.user_parque_seleccionado,
